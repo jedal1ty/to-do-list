@@ -28,23 +28,7 @@
     render();
   };
 
-  const render = () => {
-    let htmlString = "";
-
-    for (const task of tasks) {
-      htmlString += `
-          <li
-            ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-          >
-            <button class="js-done">✅</button>
-            <button class="js-delete">🗑️</button>
-            ${task.content}
-          </li>
-        `;
-    };
-
-    document.querySelector(".js-tasks").innerHTML = htmlString;
-
+  const bindEvents = () => {
     const deleteButtons = document.querySelectorAll(".js-delete");
 
     deleteButtons.forEach((deleteButton, index) => {
@@ -62,9 +46,26 @@
     });
   };
 
+  const render = () => {
+    let htmlString = "";
 
+    for (const task of tasks) {
+      htmlString += `
+          <li
+            ${task.done ? " style=\"text-decoration: line-through\"" : ""}
+          >
+            <button class="js-done">✅</button>
+            <button class="js-delete">🗑️</button>
+            ${task.content}
+          </li>
+        `;
+    };
 
-  const onFormSubmit = (event) => {
+    document.querySelector(".js-tasks").innerHTML = htmlString;
+
+    bindEvents ();
+  };
+    const onFormSubmit = (event) => {
     event.preventDefault();
 
 
@@ -75,7 +76,7 @@
     }
 
     addTask(newTask);
-  }
+  };
 
   const init = () => {
     render();
