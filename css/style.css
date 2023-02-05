@@ -11,9 +11,72 @@ html {
 
 .container {
     display: grid;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 2fr 2fr;
+    
+    justify-content: end;
+    max-width: 400px;
     padding: 20px;
+    margin: 10px;
     font-family: 'Noto Sans', sans-serif;
     list-style: none;
+    border: 1px solid;
+    grid-gap: 10px;
+    background-color: lightgray;
+    word-break: break-word;
+}
+.header {
+    align-items: left;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 10px;
+}
+
+.button {
+    background-color: teal;
+    color: white;
+    word-break: break-word;
+}
+
+.inputForm {
+    display: grid;
+    grid-template-rows: 2fr;
+    position: relative;
+}
+
+.taskList {
+    font-family: 'Noto Sans', sans-serif;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    list-style: none;
+    background-color: lightgray;
+    word-break: break-word;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.taskDoneButton {
+    background-color: green;
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+}
+.deleteButton {
+    float: right;
+    background-color: red;
+    
+    padding: 6px;
+    margin-left: 10px;
+    
+}
+
+.deleteButton:hover {
+    border: 1px solid black;
+    
+}
+
+.finishedTask {
+    float: left;
+    margin-right: 10px;
 }
