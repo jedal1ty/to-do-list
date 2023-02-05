@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.container {
+    padding: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
