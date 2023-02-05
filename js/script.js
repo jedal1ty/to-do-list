@@ -54,12 +54,14 @@
           <li
             ${task.done ? " style=\"text-decoration: line-through\"" : ""}
           >
-            <button class="js-done">✅</button>
-            <button class="js-delete">🗑️</button>
+            <button class="js-done taskDoneButton">  ${task.done ? "✔️" : ""} </button>
+            <button class="js-delete deleteButton deleteButton--hover">🗑️</button>
             ${task.content}
           </li>
         `;
     };
+
+    
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
