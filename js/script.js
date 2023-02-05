@@ -63,11 +63,11 @@
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
-    bindEvents ();
-  };
-    const onFormSubmit = (event) => {
-    event.preventDefault();
+    bindEvents();
 
+  };
+  const onFormSubmit = (event) => {
+    event.preventDefault();
 
     const newTask = document.querySelector(".js-addTask").value.trim();
 
@@ -76,6 +76,9 @@
     }
 
     addTask(newTask);
+
+    const form = document.querySelector(".js-form");
+    form.reset();
   };
 
   const init = () => {

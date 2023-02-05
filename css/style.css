@@ -10,6 +10,9 @@ html {
 }
 
 .container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     font-family: 'Noto Sans', sans-serif;
     list-style: none;
