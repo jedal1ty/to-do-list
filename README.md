@@ -2,7 +2,7 @@
 
 ## Demo 
 
-[To do list]https://jedal1ty.github.io/to-do-list/
+[To do list](https://jedal1ty.github.io/to-do-list/)
 
 ![homepage demo](images/Demo.gif)
 
