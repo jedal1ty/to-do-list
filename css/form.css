@@ -1,0 +1,27 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.form__button {
+    background-color: teal;
+    color: white;
+}
+
+.form__button:hover {
+    background-color: rgb(23, 166, 166);
+    cursor: pointer;
+}
