@@ -14,9 +14,3 @@ html {
     font-family: 'Noto Sans', sans-serif;
     word-break: break-word;
 }
-
-@media (max-width: 767px) {
-    .body {
-        grid-template-columns: auto;
-    }
-}
