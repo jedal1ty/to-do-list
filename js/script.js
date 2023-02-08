@@ -68,19 +68,19 @@
     bindEvents();
 
   };
+  
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-    const newTask = document.querySelector(".js-addTask").value.trim();
+    const newTaskElement = document.querySelector(".js-addTask");
+    const newTaskContent = newTaskElement.value.trim();
 
-    if (newTask === "") {
-      return;
+    if (newTaskContent !== "") {
+      addTask(newTaskContent);
+      newTaskElement.value = "";
     }
-
-    addTask(newTask);
-
-    const form = document.querySelector(".js-form");
-    form.reset();
+    newTaskElement.focus();
+       
   };
 
   const init = () => {
