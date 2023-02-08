@@ -10,7 +10,7 @@ html {
 }
 
 .body {
-    background-color: grey;
+    background-color: rgb(203, 203, 203);
     font-family: 'Noto Sans', sans-serif;
     word-break: break-word;
 }
