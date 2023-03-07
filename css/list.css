@@ -12,6 +12,10 @@
     border-bottom: 1px solid rgb(203, 203, 203);
 }
 
+.taskList__item--hidden {
+    display: none;
+}
+
 .taskList__content--finished {
     text-decoration: line-through;
 }
