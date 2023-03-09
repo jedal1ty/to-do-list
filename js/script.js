@@ -13,7 +13,7 @@
   let hideDoneTasks = false;
 
   const addTask = (newTaskContent) => {
-    tasks = [...tasks, { content: newTaskContent}];
+    tasks = [...tasks, { content: newTaskContent }];
     render();
   };
 
@@ -96,13 +96,13 @@
     }
 
     buttonsElement.innerHTML = `
-      <button class="buttons__button js-buttons js-toggleHideDoneTasks">
-        ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+       <button class="buttons__button js-buttons js-toggleHideDoneTasks">
+      ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
       </button>
       <button class="buttons__button js-buttons js-setAllTasksAsDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
           Ukończ wszystkie
       </button>
-      `;
+         `;
   };
 
   const bindButtonsEvents = () => {
