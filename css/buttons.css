@@ -8,6 +8,7 @@
 
 .buttons__button:hover {
     color: rgb(23, 166, 166);
+    transition: 0.5s;
 }
 
 .js-setAllTasksAsDone:disabled {

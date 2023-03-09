@@ -5,6 +5,7 @@
 
 .section__header {
     display: block;
+    justify-content: space-between;
     font-size: 20px;
     padding: 20px;
     margin: 0;
@@ -13,4 +14,9 @@
 
 .section__main {
     padding: 20px;
+}
+
+.section__buttons {
+    display: flex;
+    justify-content: flex-end;
 }
