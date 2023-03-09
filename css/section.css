@@ -4,6 +4,7 @@
 }
 
 .section__header {
+    display: block;
     font-size: 20px;
     padding: 20px;
     margin: 0;

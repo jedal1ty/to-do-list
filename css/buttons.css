@@ -1,11 +1,16 @@
 .buttons__button {
-    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: teal;
+    font-size: medium;
 }
 
-.js-toggleHideDoneTasks {
-    text-decoration: none;
+.buttons__button:hover {
+    color: rgb(23, 166, 166);
 }
 
-.js-setAllTasksAsDone {
-    text-decoration: none;
+.js-setAllTasksAsDone:disabled {
+    color: lightgray;
+    cursor: auto;
 }
