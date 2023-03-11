@@ -4,11 +4,11 @@
     cursor: pointer;
     color: teal;
     font-size: medium;
+    transition: 0.5s;
 }
 
 .buttons__button:hover {
     color: rgb(23, 166, 166);
-    transition: 0.5s;
 }
 
 .js-setAllTasksAsDone:disabled {

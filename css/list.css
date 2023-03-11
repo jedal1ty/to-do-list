@@ -26,6 +26,7 @@
     border: none;
     padding: 0;
     color: white;
+    transition: 0.5s;
 }
 
 .taskList__button--finished {
@@ -35,7 +36,6 @@
 .taskList__button--finished:hover {
     background-color: lightgreen;
     cursor: pointer;
-    transition: 0.5s;
 }
 
 .taskList__button--delete {
@@ -45,5 +45,4 @@
 .taskList__button--delete:hover {
     background-color: brown;
     cursor: pointer;
-    transition: 0.5s;
 }

@@ -4,7 +4,6 @@
 }
 
 .section__header {
-    display: block;
     font-size: 20px;
     padding: 20px;
     border-bottom: 2px solid rgb(203, 203, 203);
@@ -16,12 +15,13 @@
 
 .section__buttons {
     display: grid;    
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: end;
 }
 
 .section__tasks {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     font-size: 20px;
     padding: 20px;
     border-bottom: 2px solid rgb(203, 203, 203);
