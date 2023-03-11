@@ -9,6 +9,8 @@
 ### Description
 
 This is a simple "To do list" that I have created while learning to code with YouCode team.
+First version of my "To do list" was without buttons that I now added to finish all tasks and to hide tasks that
+are already finished.
 
 #### Technologies used:
 - HTML
