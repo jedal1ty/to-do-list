@@ -4,7 +4,7 @@
 
 [To do list](https://jedal1ty.github.io/to-do-list/)
 
-![homepage demo](images/Demo.gif)
+![homepage demo](images/demo.gif)
 
 ### Description
 
